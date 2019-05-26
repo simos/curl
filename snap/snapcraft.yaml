@@ -1,0 +1,23 @@
+name: curl-simosx
+version: '7.65'
+summary: CLI tool for transferring data with URL syntax (HTTP, HTTPS, etc)
+description: |
+    A command line tool and library for transferring data with URL syntax, 
+    supporting HTTP, HTTPS, FTP, FTPS, GOPHER, TFTP, SCP, SFTP, SMB, TELNET, 
+    DICT, LDAP, LDAPS, FILE, IMAP, SMTP, POP3, RTSP and RTMP. 
+    libcurl offers a myriad of powerful features
+
+grade: stable # must be 'stable' to release into candidate/stable channels
+confinement: strict # use 'strict' once you have the right plugs and slots
+
+apps: 
+  httpstat:
+    command: bin/curl
+    plugs:
+      - network
+
+parts:
+  curl: 
+    plugin: autotools
+    source: https://github.com/curl/curl.git
+    source-tag: curl-7_65_0
