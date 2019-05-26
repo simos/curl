@@ -1,5 +1,4 @@
 name: curl-simosx
-base: core18
 version: '7.65'
 summary: CLI tool for transferring data with URL syntax (HTTP, HTTPS, etc)
 description: |
@@ -29,7 +28,7 @@ parts:
       - libnghttp2-dev
       - libgss-dev
       - libbrotli-dev
-      - libidn2-dev 
+      - libidn2-0-dev 
       - librtmp-dev
       - libldap2-dev
       - gss-ntlmssp-dev
@@ -46,7 +45,6 @@ parts:
       - libkrb5-26-heimdal
       - libldap-2.4-2
       - libnghttp2-14
-      - libpsl5
       - libroken18-heimdal
       - librtmp1
       - libsasl2-2
