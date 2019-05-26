@@ -49,6 +49,5 @@ parts:
       - librtmp1
       - libsasl2-2
       - libssl1.1
-      - libunistring2
       - libwind0-heimdal
 
