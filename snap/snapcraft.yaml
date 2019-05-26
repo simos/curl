@@ -28,7 +28,7 @@ parts:
       - libnghttp2-dev
       - libgss-dev
       - libbrotli-dev
-      - libidn2-dev 
+      - libidn2-0-dev 
       - librtmp-dev
       - libldap2-dev
       - gss-ntlmssp-dev
