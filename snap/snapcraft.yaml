@@ -21,3 +21,15 @@ parts:
     plugin: autotools
     source: https://github.com/curl/curl.git
     source-tag: curl-7_65_0
+    build-packages:
+      - libssl-dev
+      - libssh2-1-dev
+      - zlib1g-dev 
+      - libnghttp2-dev
+      - libgss-dev
+      - libbrotli-dev
+      - libidn2-dev 
+      - librtmp-dev
+      - libldap2-dev
+      - gss-ntlmssp-dev
+      - libpsl-dev
