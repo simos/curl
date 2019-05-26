@@ -23,20 +23,15 @@ parts:
     source-tag: curl-7_65_0
     build-packages:
       - libssl-dev
-      - libssh2-1-dev
+      - libssh-dev
       - zlib1g-dev 
-      - libnghttp2-dev
-      - libgss-dev
       - libbrotli-dev
-      - libidn2-0-dev 
+      - libidn11-dev 
       - librtmp-dev
       - libldap2-dev
-      - gss-ntlmssp-dev
-      - libpsl-dev
     stage-packages:
       - libasn1-8-heimdal
       - libbrotli1
-      - libgssapi3-heimdal
       - libhcrypto4-heimdal
       - libheimbase1-heimdal
       - libheimntlm0-heimdal
@@ -44,10 +39,9 @@ parts:
       - libidn2-0
       - libkrb5-26-heimdal
       - libldap-2.4-2
-      - libnghttp2-14
       - libroken18-heimdal
       - librtmp1
       - libsasl2-2
-      - libssl1.1
+      - libssl1.0.0
       - libwind0-heimdal
 
